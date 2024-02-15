@@ -24,4 +24,4 @@ grobid_client_python.egg-info/
 .env
 part2/.env
 
-part2/grobid_client_python/.env
+part2/grobid_client_extraction/.env
