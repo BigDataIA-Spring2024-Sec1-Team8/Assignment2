@@ -1,0 +1,4 @@
+CreationDate,Creator,ModDate,Producer,Trapped,s3_bucket_link
+D:20230130124011-05'00',Adobe InDesign 17.4 (Windows),D:20230208154528-05'00',Adobe PDF Library 16.0.7,/False,s3://cfainstitute-learning-outcomes-raw/grobid/Grobid_RR_2024_Level1_combined.txt
+D:20230410072753-04'00',Adobe InDesign 17.4 (Windows),D:20230410115010-04'00',Adobe PDF Library 16.0.7,/False,s3://cfainstitute-learning-outcomes-raw/grobid/Grobid_RR_2024_Level2_combined.txt
+D:20230615133905-04'00',Adobe InDesign 17.4 (Windows),D:20230615134206-04'00',Adobe PDF Library 16.0.7,/False,s3://cfainstitute-learning-outcomes-raw/grobid/Grobid_RR_2024_Level3_combined.txt

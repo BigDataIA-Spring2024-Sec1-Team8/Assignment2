@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">2024 Level III Topic Outlines Economics LEARNING OUTCOMES Capital Market Expectations, Part 1: Framework and Macro Considerations</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<title level="a" type="main">2024 Level III Topic Outlines Economics LEARNING OUTCOMES Capital Market Expectations, Part 1: Framework and Macro Considerations</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<idno type="MD5">9680F98C1504134C55D67425E27190A1</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.8.0" ident="GROBID" when="2024-02-15T18:29+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+				<p>□ discuss the role of, and a framework for, capital market expectations in the portfolio management process □ discuss challenges in developing capital market forecasts □ explain how exogenous shocks may affect economic growth trends □ discuss the application of economic growth trend analysis to the formulation of capital market expectations □ compare major approaches to economic forecasting □ discuss how business cycles affect short-and long-term expectations □ explain the relationship of inflation to the business cycle and the implications of inflation for cash, bonds, equity, and real estate returns □ discuss the effects of monetary and fiscal policy on business cycles □ interpret the shape of the yield curve as an economic predictor and discuss the relationship between the yield curve and fiscal and monetary policy □ identify and interpret macroeconomic, interest rate, and exchange rate linkages between economies Capital Market Expectations, Part 2: Forecasting Asset Class Returns The candidate should be able to: □ discuss approaches to setting expectations for fixed-income returns □ discuss risks faced by investors in emerging market fixed-income securities and the country risk analysis techniques used to evaluate emerging market economies © CFA Institute. For candidate use only. Not for distribution.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+	</text>
+</TEI>
