@@ -6,9 +6,11 @@ The project is structured into two primary components aimed at streamlining the 
 ## Project Resources
 * **Google Codelab link** - https://codelabs-preview.appspot.com/?file_id=1MQWcii-VMXXTCjRpnW2LeLw88TdDjGMXlnuIGz4oHK0#0
 * **Snowflake Demonstration**: https://northeastern.zoom.us/rec/share/McrcQcNnnkMRREplYTBP_N7orIqrbpHLUJo992smep6xoigZLjhwaHxh9bz8LKsY.sYRV2voDwEmgGFdb  **Passcode**: 0A.L+U4r
-* **Webscrapping & Snowflake** - https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment2/tree/main/part1
 * **PyPDF Extraction** - https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment2/blob/main/part2/pypdf_extract.py
 * **Grobid Extraction** - https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment2/blob/main/part2/grobid_client_extraction/grobid_metadata_extract.py
+* **Upload XML Content to Snowflake** - https://colab.research.google.com/drive/1a4qn8Ew240i_gOImJFivx6x5T2mHxP-C?usp=sharing
+* **Part 1 - Upload with SQLAlchemy** - https://colab.research.google.com/drive/10ScciBlFoD845nn7YYp-Mve05vSEWfxs?usp=sharing
+
 
 ## Tech Stack
 
