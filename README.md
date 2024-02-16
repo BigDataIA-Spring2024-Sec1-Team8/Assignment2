@@ -4,21 +4,24 @@
 The project is structured into two primary components aimed at streamlining the acquisition and organization of educational resources from the CFA Institute. Part 1 is dedicated to the web-scraping of the CFA Institute’s Refresher Readings webpage (https://www.cfainstitute.org/en/membership/professional-development/refresher-readings#sort=%40refreadingcurriculumyear%20descending) , systematically extracting content to be curated into a structured CSV file. This CSV file is subsequently uploaded to Snowflake with the help of SQLAlchemy, ensuring the data is securely stored and ready for analysis within the cloud-based data warehouse. Part 2 expands the scope of data handling by automating the extraction of text from PDF documents through the use of PyPDF2 and Grobid. The extracted textual data is organized into text files and uploaded to AWS S3 for reliable and centralized storage, while metadata related to the documents is concurrently uploaded to Snowflake. This meticulous approach guarantees an integrated repository where documents are not only stored but also accompanied by their relevant metadata.
 
 ## Project Resources
-* **Google Codelab link** - https://codelabs-preview.appspot.com/?file_id=1MQWcii-VMXXTCjRpnW2LeLw88TdDjGMXlnuIGz4oHK0#0
-* **Snowflake Demonstration**: https://northeastern.zoom.us/rec/share/McrcQcNnnkMRREplYTBP_N7orIqrbpHLUJo992smep6xoigZLjhwaHxh9bz8LKsY.sYRV2voDwEmgGFdb  **Passcode**: 0A.L+U4r
+* **Google Codelab** - https://codelabs-preview.appspot.com/?file_id=1MQWcii-VMXXTCjRpnW2LeLw88TdDjGMXlnuIGz4oHK0#0
 * **PyPDF Extraction** - https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment2/blob/main/part2/pypdf_extract.py
 * **Grobid Extraction** - https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment2/blob/main/part2/grobid_client_extraction/grobid_metadata_extract.py
-* **Upload XML Content to Snowflake** - https://colab.research.google.com/drive/1a4qn8Ew240i_gOImJFivx6x5T2mHxP-C?usp=sharing
+
+* Demonstrations
+* **Snowflake**: https://northeastern.zoom.us/rec/share/McrcQcNnnkMRREplYTBP_N7orIqrbpHLUJo992smep6xoigZLjhwaHxh9bz8LKsY.sYRV2voDwEmgGFdb  **Passcode**: 0A.L+U4r
 * **Part 1 - Upload with SQLAlchemy** - https://drive.google.com/file/d/1e7lzMEd_M_mmkRUgolD133cbLtUBdCYa/view?usp=sharing
+* **Snowflake Upload via script from S3** -https://drive.google.com/file/d/1FKmv6gXNUxEemZZECmQk1HChaglk430q/view?usp=sharing
+* **Snowflake Upload via script from local** -https://drive.google.com/file/d/1FKmv6gXNUxEemZZECmQk1HChaglk430q/view?usp=sharing
+  
+* Google Colab
+* **Upload XML Content to Snowflake** - https://colab.research.google.com/drive/1a4qn8Ew240i_gOImJFivx6x5T2mHxP-C?usp=sharing
 * **Upload Metadata from Grobid** - https://colab.research.google.com/drive/1UXvYaMyr-yiYR0iOFa8NgIjAyo4s8CF_?usp=sharing
 * **Upload Metadata from Pypdf** - https://colab.research.google.com/drive/1NTzrSG_Q_WyV9Gi4e2WOtlLJcCkarQkZ?usp=sharing
 * **XML Content to Snowflake** - https://colab.research.google.com/drive/1sCdXfklf1s6b0bfdW0l_D4J_6uO3mkwj?usp=sharing
 * **XML to TXT** - https://colab.research.google.com/drive/1_K9cMqhK9-L5QYc5xCbEW5pL5TvO0Z9q?usp=sharing
 
-* **Snowflake Upload Demo via script from s3** -https://drive.google.com/file/d/1FKmv6gXNUxEemZZECmQk1HChaglk430q/view?usp=sharing
-* **Snowflake Upload Demo via script from local** -https://drive.google.com/file/d/1FKmv6gXNUxEemZZECmQk1HChaglk430q/view?usp=sharing
 
-[CodeLabs]([url](https://codelabs-preview.appspot.com/?file_id=1MQWcii-VMXXTCjRpnW2LeLw88TdDjGMXlnuIGz4oHK0#0))
 
 ## Tech Stack
 
