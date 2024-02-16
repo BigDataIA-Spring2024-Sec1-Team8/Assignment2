@@ -5,16 +5,17 @@ The project is structured into two primary components aimed at streamlining the 
 
 ## Project Resources
 * **Google Codelab** - https://codelabs-preview.appspot.com/?file_id=1MQWcii-VMXXTCjRpnW2LeLw88TdDjGMXlnuIGz4oHK0#0
+* **Webscrapping & Snowflake** - https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment2/tree/main/part1
 * **PyPDF Extraction** - https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment2/blob/main/part2/pypdf_extract.py
 * **Grobid Extraction** - https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment2/blob/main/part2/grobid_client_extraction/grobid_metadata_extract.py
 
-* Demonstrations
+Demonstrations
 * **Snowflake**: https://northeastern.zoom.us/rec/share/McrcQcNnnkMRREplYTBP_N7orIqrbpHLUJo992smep6xoigZLjhwaHxh9bz8LKsY.sYRV2voDwEmgGFdb  **Passcode**: 0A.L+U4r
 * **Part 1 - Upload with SQLAlchemy** - https://drive.google.com/file/d/1e7lzMEd_M_mmkRUgolD133cbLtUBdCYa/view?usp=sharing
 * **Snowflake Upload via script from S3** -https://drive.google.com/file/d/1FKmv6gXNUxEemZZECmQk1HChaglk430q/view?usp=sharing
 * **Snowflake Upload via script from local** -https://drive.google.com/file/d/1FKmv6gXNUxEemZZECmQk1HChaglk430q/view?usp=sharing
   
-* Google Colab
+Google Colab
 * **Upload XML Content to Snowflake** - https://colab.research.google.com/drive/1a4qn8Ew240i_gOImJFivx6x5T2mHxP-C?usp=sharing
 * **Upload Metadata from Grobid** - https://colab.research.google.com/drive/1UXvYaMyr-yiYR0iOFa8NgIjAyo4s8CF_?usp=sharing
 * **Upload Metadata from Pypdf** - https://colab.research.google.com/drive/1NTzrSG_Q_WyV9Gi4e2WOtlLJcCkarQkZ?usp=sharing
