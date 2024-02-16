@@ -39,7 +39,27 @@ In parallel, metadata extracted from the PDFs, which may include information lik
 
 ## Repository Structure
 
-<img width="316" alt="Screenshot 2024-02-16 at 12 13 47 PM" src="https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment2/assets/114782541/98f51e8f-fca7-444a-b170-56bf196a6600">
+.
+├── LICENSE
+├── README.md
+├── diagrams
+│   ├── part1.py
+│   └── part2.py
+├── part1
+│   ├── process_raw_data.py
+│   ├── resources
+│   ├── scrape-content-links.py
+│   ├── scrape_links.py
+│   ├── upload_to_snowflake_from_s3.py
+│   └── upload_with_alchemy.ipynb
+├── part2
+│   ├── grobid_client_extraction
+│   ├── metadata_extraction
+│   ├── pypdf_extract.py
+│   ├── resources
+│   ├── xml_to_txt.ipynb
+│   └── xmlcontent_to_snowflake.ipynb
+└── requirements.txt
 
 ## Contributions 
 * Sai Durga Mahesh Bandaru - 33.3%
