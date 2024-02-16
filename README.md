@@ -18,6 +18,8 @@ The project is structured into two primary components aimed at streamlining the 
 * **Snowflake Upload Demo via script from s3** -https://drive.google.com/file/d/1FKmv6gXNUxEemZZECmQk1HChaglk430q/view?usp=sharing
 * **Snowflake Upload Demo via script from local** -https://drive.google.com/file/d/1FKmv6gXNUxEemZZECmQk1HChaglk430q/view?usp=sharing
 
+[CodeLabs]([url](https://codelabs-preview.appspot.com/?file_id=1MQWcii-VMXXTCjRpnW2LeLw88TdDjGMXlnuIGz4oHK0#0))
+
 ## Tech Stack
 
 BeautifulSoup | Selenium | PyPDF2 | Grobid | SQLAlchemy | AWS S3 | Snowflake
