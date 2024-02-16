@@ -3,7 +3,7 @@ import snowflake.connector
 import os
 from dotenv import load_dotenv
 load_dotenv()
-# Snowflake connection parameters
+
 snowflake_account = os.getenv('snowflake_account')
 snowflake_user = os.getenv('snowflake_user')
 snowflake_password = os.getenv('snowflake_password')
@@ -21,7 +21,7 @@ conn = snowflake.connector.connect(
 cursor = conn.cursor()
 
 target_database = 'CFAInstitute'
-target_table = 'TopicDetails5'
+target_table = 'TopicDetails_s3'
 
 create_database_query = f"CREATE DATABASE IF NOT EXISTS {target_database}"
 cursor.execute(create_database_query)
@@ -49,13 +49,14 @@ cursor.execute("""CREATE OR REPLACE FILE FORMAT mycsvformat
    TYPE = 'CSV'
    FIELD_DELIMITER = '|'
    SKIP_HEADER = 1;""")
-cursor.execute("""CREATE OR REPLACE STORAGE INTEGRATION part1
-  TYPE = EXTERNAL_STAGE
-  STORAGE_PROVIDER = 'S3'
-  STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::640055273174:role/s3-read-objects'
-  ENABLED = TRUE
-  STORAGE_ALLOWED_LOCATIONS = ('*')
-""")
+
+# cursor.execute("""CREATE OR REPLACE STORAGE INTEGRATION part1
+#   TYPE = EXTERNAL_STAGE
+#   STORAGE_PROVIDER = 'S3'
+#   STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::640055273174:role/s3-read-objects'
+#   ENABLED = TRUE
+#   STORAGE_ALLOWED_LOCATIONS = ('*')
+# """)
 
 cursor.execute(f"""
 COPY INTO {target_table}
