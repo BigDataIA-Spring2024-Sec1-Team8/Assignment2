@@ -25,7 +25,7 @@ It automates the collection of educational materials from the CFA Institute's we
 
 #### Part 2 PDF Text Extraction
 #### Grobid Extraction
-![Blank diagram (1)](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment2/assets/114782541/5d5867f6-4abf-4f2f-8f6e-2faf52a66313)
+ ![image](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment2/assets/114782541/54bec312-2e1d-4219-91ec-61757a7da14e)
 
 #### Process Flow
 A workflow for PDF data extraction and storage, utilizing Grobid for text parsing, Python for XML processing, and Amazon S3 for text storage, with metadata management handled by SQLAlchemy and Snowflake. After Grobid processes the PDFs, scripts convert XML to text, extract metadata, and store both elements—text in S3 and metadata in Snowflake—facilitating efficient data use and analysis.
