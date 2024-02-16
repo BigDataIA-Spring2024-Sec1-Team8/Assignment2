@@ -10,7 +10,6 @@ The project is structured into two primary components aimed at streamlining the 
 * **Grobid Extraction** - https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment2/blob/main/part2/grobid_client_extraction/grobid_metadata_extract.py
 
 Demonstrations
-* **Snowflake**: https://northeastern.zoom.us/rec/share/McrcQcNnnkMRREplYTBP_N7orIqrbpHLUJo992smep6xoigZLjhwaHxh9bz8LKsY.sYRV2voDwEmgGFdb  **Passcode**: 0A.L+U4r
 * **Part 1 - Upload with SQLAlchemy** - https://drive.google.com/file/d/1e7lzMEd_M_mmkRUgolD133cbLtUBdCYa/view?usp=sharing
 * **Snowflake Upload via script from S3** -https://drive.google.com/file/d/1FKmv6gXNUxEemZZECmQk1HChaglk430q/view?usp=sharing
 * **Snowflake Upload via script from local** -https://drive.google.com/file/d/1FKmv6gXNUxEemZZECmQk1HChaglk430q/view?usp=sharing
