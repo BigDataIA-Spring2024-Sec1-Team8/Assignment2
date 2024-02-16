@@ -1,4 +1,3 @@
-target
 .DS_Store
 .project
 .settings
@@ -22,6 +21,8 @@ build/
 dist/
 grobid_client_python.egg-info/
 .env
+*.in
+.env
 part2/.env
-
+part1/.env
 part2/grobid_client_extraction/.env
