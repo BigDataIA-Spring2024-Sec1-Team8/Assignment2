@@ -4,32 +4,40 @@ from diagrams.programming.language import Python
 from diagrams.aws.storage import SimpleStorageServiceS3Bucket
 from diagrams.generic.database import SQL
 
-with Diagram("Part2", show=False, direction="TB"):
-    pytext = Python("extract_text_pypdf") 
-    ecl = Python("extract_text_grobid")  
-    xml_to_txt = Python("xml_to_txt")  
-    emd_pypdf = Python("extract_metadata")  
-    emd_pypdf = Python("extract_metadata")  
 
-    upload_data_to_snowflake = Python("upload_content_to_snowflake")
-    upload_data_to_snowflake_pypdf_metadata = Python("upload_data_to_snowflake_pypdf_metadata")
-    upload_data_to_snowflake_grobid_metadata = Python("upload_data_to_snowflake_grobid_metadata")
+with Diagram("Part2 Grobid", show=False, direction="TB"):
+    ecl = Python("extract_text")  
+    xml_to_txt = Python("xml_to_txt")  
+
+    extract_metadata_grobid = Python("extract_metadata")  
+
+    upload_data_to_snowflake = Python("upload_content")
+    upload_data_to_snowflake_grobid_metadata = Python("upload_metadata")
     
     MetadataDB = SQL("MetadataDB")
     LearningOutcomesDB = SQL("LearningOutcomesDB")
 
-    pypdf = SimpleStorageServiceS3Bucket("	cfainstitute-learning-outcomes-raw/pypdf")
-    grobid = SimpleStorageServiceS3Bucket("	cfainstitute-learning-outcomes-raw/grobid")
+    grobid = SimpleStorageServiceS3Bucket("learning-outcomes grobid")
 
-    pytext >> pypdf 
     ecl >> xml_to_txt
     xml_to_txt >> grobid
     
     upload_data_to_snowflake >> LearningOutcomesDB
+    extract_metadata_grobid >> upload_data_to_snowflake_grobid_metadata >> MetadataDB
+    
+with Diagram("Part2 pypdf", show=False, direction="TB"):
+    pytext = Python("extract_text") 
+
+    upload_data_to_snowflake_pypdf_metadata = Python("upload pypdf_metadata")
+    
+    MetadataDB = SQL("MetadataDB")
+
+    pypdf = SimpleStorageServiceS3Bucket("learning-outcomes pypdf")
+
+    pytext >> pypdf     
 
     
     upload_data_to_snowflake_pypdf_metadata >> MetadataDB
-    upload_data_to_snowflake_grobid_metadata >> MetadataDB
     
 
     
