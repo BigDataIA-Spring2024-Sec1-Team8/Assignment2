@@ -7,7 +7,7 @@ The project is structured into two primary components aimed at streamlining the 
 * **Google Codelab** - https://codelabs-preview.appspot.com/?file_id=1MQWcii-VMXXTCjRpnW2LeLw88TdDjGMXlnuIGz4oHK0#0
 * **Webscrapping & Snowflake** - https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment2/tree/main/part1
 * **PyPDF Extraction** - https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment2/blob/main/part2/pypdf_extract.py
-* **Grobid Extraction** - https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment2/blob/main/part2/grobid_client_extraction/grobid_metadata_extract.py
+* **Grobid Extraction** - https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment2/blob/main/part2/grobid_client_extraction/
 
 Demonstrations
 * **Part 1 - Upload with SQLAlchemy** - https://drive.google.com/file/d/1e7lzMEd_M_mmkRUgolD133cbLtUBdCYa/view?usp=sharing
