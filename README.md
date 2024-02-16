@@ -39,8 +39,7 @@ In parallel, metadata extracted from the PDFs, which may include information lik
 
 ## Repository Structure
 
-![image](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment2/assets/114782541/0cf03328-c24f-4fdd-9edd-7ed1edec1317)
-
+![Pasted Graphic 1](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment2/assets/114782541/3bb1326f-514a-4519-bdee-0d5d149ac013)
 
 ## Contributions 
 * Sai Durga Mahesh Bandaru - 33.3%
