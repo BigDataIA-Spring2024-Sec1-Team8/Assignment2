@@ -11,6 +11,23 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def extract_data(link):
+    """
+    Scrapes content from the provided link and returns a dictionary with relevant information.
+
+    Parameters:
+    - link (str): The URL of the webpage to be scraped.
+
+    Returns:
+    dict: A dictionary containing the extracted information with the following keys:
+        - 'Title': The title of the content.
+        - 'Curriculum': The curriculum information.
+        - 'Level': The educational level of the content.
+        - 'Topics': The topics covered in the content.
+        - 'Learning Outcomes Section': The text from the learning outcomes section.
+        - 'Introduction': The text from the introduction section.
+        - 'Summary Bullets': Comma-separated summary bullets.
+        - 'pdf_link': The link to the PDF associated with the content.
+    """
     response = requests.get(link)
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
@@ -60,6 +77,15 @@ def extract_data(link):
 
 
 def write_to_csv(output_data):
+    """
+    Writes the extracted data to a CSV file.
+
+    Parameters:
+    - output_data (list): A list of dictionaries, where each dictionary represents the extracted data from a webpage.
+
+    Returns:
+    None
+    """
     fieldnames = ['Title', 'Curriculum', 'Level', 'Topics', 'Learning Outcomes Section', 'Introduction', 'Summary Bullets', 'pdf_link']
     csv_output_path = './resources/raw_content.csv'
     # Write data to the CSV file
@@ -71,6 +97,15 @@ def write_to_csv(output_data):
         for data in output_data:
             writer.writerow(data)
 def upload_to_s3(path):
+    """
+    Uploads a file to an Amazon S3 bucket.
+
+    Parameters:
+    - path (str): The local path of the file to be uploaded.
+
+    Returns:
+    None
+    """
     aws_access_key_id = os.getenv('aws_access_key_id')
     aws_secret_access_key = os.getenv('aws_secret_access_key')
     bucket_name = 'cfainstitute-topic-details-raw'
@@ -84,19 +119,33 @@ def upload_to_s3(path):
     s3.put_object(Body=csv_data, Bucket=bucket_name, Key=s3_key)
 
 def extract_content():
-    csv_file_path = './resources/links.csv' 
-    output_data = []
+    """
+    Extracts content from multiple links specified in a CSV file, writes the extracted data to a local CSV file,
+    and uploads it to an Amazon S3 bucket.
 
+    Parameters:
+    None
+
+    Returns:
+    None
+    """
+    csv_file_path = './resources/links.csv'
+     # Initialize an empty list to store extracted data
+    output_data = []
+    # Read links from the CSV file and extract data
     with open(csv_file_path, 'r') as csvfile:
         csv_reader = csv.reader(csvfile)
         next(csv_reader)  
         for row in csv_reader:
-            link = row[0]  
+            link = row[0]  # Assuming the link is in the first column
             data = extract_data(link)
             if data:
                 output_data.append(data)
-    
+    # Write the extracted data to a local CSV file
     write_to_csv(output_data=output_data)
+    # Upload the local CSV file to Amazon S3
     upload_to_s3(path='./resources/raw_content.csv')
 
+
+#start extracting the content from links 
 extract_content()
