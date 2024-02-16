@@ -39,12 +39,10 @@ def extract_data(link):
             ul = summary_section.find_next('ul')
             if ul:
                 summary_bullets = [li.text.strip() for li in ul.find_all('li')]
-        related = soup.find('p', text='Related')
         pdf_link=""
-        if related:
-            a = related.find_next('a', class_='locked-content', href=True, string=lambda t: "Download the full reading (PDF)" in t)
-            pdf_link = 'https://www.cfainstitute.org/' + a.get('href', '')
-
+        a = soup.find('a', string='Download the full reading (PDF)') 
+        if a:
+            pdf_link = a['href']
         return {
             'Title': title,
             'Curriculum': curriculum,
@@ -85,7 +83,7 @@ def upload_to_s3(path):
     csv_data = df.to_csv(index=False)
     s3.put_object(Body=csv_data, Bucket=bucket_name, Key=s3_key)
 
-def extract_links():
+def extract_content():
     csv_file_path = './resources/links.csv' 
     output_data = []
 
@@ -101,4 +99,4 @@ def extract_links():
     write_to_csv(output_data=output_data)
     upload_to_s3(path='./resources/raw_content.csv')
 
-extract_links()
+extract_content()
