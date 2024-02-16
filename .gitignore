@@ -19,8 +19,9 @@ __pycache__
 doc/
 build/
 dist/
-*.in
 grobid_client_python.egg-info/
+.env
+*.in
 .env
 part2/.env
 part1/.env
