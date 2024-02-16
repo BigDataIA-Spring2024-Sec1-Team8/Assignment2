@@ -12,6 +12,8 @@ The project is structured into two primary components aimed at streamlining the 
 * **Part 1 - Upload with SQLAlchemy** - https://drive.google.com/file/d/1e7lzMEd_M_mmkRUgolD133cbLtUBdCYa/view?usp=sharing
 * **Upload Metadata from Grobid** - https://colab.research.google.com/drive/1UXvYaMyr-yiYR0iOFa8NgIjAyo4s8CF_?usp=sharing
 * **Upload Metadata from Pypdf** - https://colab.research.google.com/drive/1NTzrSG_Q_WyV9Gi4e2WOtlLJcCkarQkZ?usp=sharing
+* **XML Content to Snowflake** - https://colab.research.google.com/drive/1sCdXfklf1s6b0bfdW0l_D4J_6uO3mkwj?usp=sharing
+* **XML to TXT** - https://colab.research.google.com/drive/1_K9cMqhK9-L5QYc5xCbEW5pL5TvO0Z9q?usp=sharing
 
 * **Snowflake Upload Demo via script from s3** -https://drive.google.com/file/d/1FKmv6gXNUxEemZZECmQk1HChaglk430q/view?usp=sharing
 * **Snowflake Upload Demo via script from local** -https://drive.google.com/file/d/1FKmv6gXNUxEemZZECmQk1HChaglk430q/view?usp=sharing
