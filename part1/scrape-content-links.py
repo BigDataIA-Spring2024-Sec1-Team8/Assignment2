@@ -42,7 +42,7 @@ def extract_data(link):
         related = soup.find('p', text='Related')
         pdf_link=""
         if related:
-            a = related.find_next('a')
+            a = related.find_next('a', class_='locked-content', href=True, string=lambda t: "Download the full reading (PDF)" in t)
             pdf_link = 'https://www.cfainstitute.org/' + a.get('href', '')
 
         return {
